@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const LoginContainer =  styled.div`
         margin: 0 auto;
@@ -24,7 +24,7 @@ export const LoginContainer =  styled.div`
         @media (max-width: 482px){
             flex-direction: column;
             justify-content: space-evenly;
-            height: 100vh;
+            height: 94vh;
             padding: 0;
         }
     `
@@ -32,9 +32,15 @@ export const LoginContainer =  styled.div`
 export const LoginDiv = styled.div`
     margin: 1%;
     width: 45%;
-    height: 50%;
-    background-color: red;
+    height: 45%;
+    background-color: white;
     margin: auto;
+    border-radius: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3%;
     @media (max-width: 481px){
         background-color: blue;
         width: 95%;
@@ -42,3 +48,22 @@ export const LoginDiv = styled.div`
         margin: 0 1%;
     }
 `
+
+// export const Logo = styled.div`
+//     display:flex;
+//     align-items:center;
+//     a{
+//         font-size:1.8rem;
+//         font-weight:800;
+//         color: ${props=> props.theme.text}
+//     }
+//     span{
+//         background-color:red;
+//         border-radius:100%;
+//         padding: 0.2rem 0rem;
+//         font-size:0.8rem;
+//         font-weight:800;
+//         cursor: pointer;
+//         color: ${props=> props.theme.text}
+//     }
+// `
